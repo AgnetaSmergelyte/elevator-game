@@ -4,4 +4,76 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.building-container {
+  background-color: #d9ccf3;
+  width: 700px;
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.floors {
+  width: 500px;
+  height: 100%;
+}
+
+.elevator-container {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.elevator {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: #b0b00b solid 2px;
+  background-color: #fdfd81;
+}
+
+.first {
+  bottom: 22px;
+}
+
+.second {
+  bottom: 176px;
+}
+
+.third {
+  bottom: 328px;
+}
+
+.floors {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.floors > div {
+  flex: 1;
+  border-bottom: #b0b00b solid 2px;
+}
+
+.person-wrapper {
+  width: 50px;
+  position: absolute;
+}
+.person-wrapper img {
+  width: 100%;
+}
+
+.waiting-in-3rd {
+  bottom: 328px;
+  right: 300px;
+}
+
 /*# sourceMappingURL=style.css.map */
