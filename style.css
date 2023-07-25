@@ -67,16 +67,36 @@
 .person-wrapper {
   width: 50px;
   position: absolute;
+  z-index: 10;
   display: flex;
   align-items: start;
+  transition: all 1s ease-in-out;
 }
 .person-wrapper img {
   width: 100%;
 }
 
-.waiting-in-3rd {
+.waiting-in-1 {
+  bottom: 22px;
+  right: 400px;
+}
+
+.waiting-in-2 {
+  bottom: 176px;
+  right: 400px;
+}
+
+.waiting-in-3 {
   bottom: 328px;
   right: 400px;
+}
+
+.leaving {
+  right: 700px;
+}
+
+.in-elevator {
+  right: 200px;
 }
 
 #to-where img {
