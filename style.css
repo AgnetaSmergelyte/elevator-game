@@ -14,7 +14,7 @@
 
 .building-container {
   background-color: #d9ccf3;
-  width: 700px;
+  width: 800px;
   height: 500px;
   display: flex;
   position: relative;
@@ -39,6 +39,7 @@
   height: 150px;
   border: #b0b00b solid 2px;
   background-color: #fdfd81;
+  transition: all 1s ease-in-out;
 }
 
 .first {
@@ -66,6 +67,8 @@
 .person-wrapper {
   width: 50px;
   position: absolute;
+  display: flex;
+  align-items: start;
 }
 .person-wrapper img {
   width: 100%;
@@ -73,7 +76,44 @@
 
 .waiting-in-3rd {
   bottom: 328px;
-  right: 300px;
+  right: 400px;
+}
+
+#to-where img {
+  position: absolute;
+}
+#to-where p {
+  position: absolute;
+  top: 6px;
+  right: -27px;
+  font-weight: bold;
+}
+
+.elevator-buttons {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.elevator-buttons > div {
+  width: 70px;
+  height: 70px;
+  background-color: #fdfd81;
+  cursor: pointer;
+  border: #b0b00b 5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b0b00b;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.elevator-buttons > div:hover {
+  background-color: #dede32;
+  color: #808000;
 }
 
 /*# sourceMappingURL=style.css.map */
