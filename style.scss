@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -10,6 +11,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .building-container {
   background-color: #d9ccf3;
   width: 800px;
@@ -17,10 +19,12 @@
   display: flex;
   position: relative;
 }
+
 .floors {
   width: 500px;
   height: 100%;
 }
+
 .elevator-container {
   position: relative;
   width: 200px;
@@ -28,6 +32,7 @@
   display: flex;
   justify-content: center;
 }
+
 .elevator {
   position: absolute;
   width: 150px;
@@ -36,24 +41,30 @@
   background-color: #fdfd81;
   transition: all 1s ease-in-out;
 }
+
 .first {
   bottom: 22px;
 }
+
 .second {
   bottom: 176px;
 }
+
 .third {
   bottom: 328px;
 }
+
 .floors {
   display: flex;
   flex-direction: column;
   padding: 20px;
+
   & > div {
     flex: 1;
     border-bottom: #b0b00b solid 2px;
   }
 }
+
 .person-wrapper {
   width: 50px;
   position: absolute;
@@ -61,32 +72,40 @@
   display: flex;
   align-items: start;
   transition: all 1s ease-in-out;
+
   img {
     width: 100%;
   }
 }
+
 .waiting-in-1 {
   bottom: 22px;
   right: 400px;
 }
+
 .waiting-in-2 {
   bottom: 176px;
   right: 400px;
 }
+
 .waiting-in-3 {
   bottom: 328px;
   right: 400px;
 }
+
 .leaving {
   right: 700px
 }
+
 .in-elevator {
   right: 200px;
 }
+
 #to-where {
   img {
     position: absolute;
   }
+
   p {
     position: absolute;
     top: 6px;
@@ -94,6 +113,7 @@
     font-weight: bold;
   }
 }
+
 .elevator-buttons {
   width: 100px;
   display: flex;
@@ -101,6 +121,7 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+
   & > div {
     width: 70px;
     height: 70px;
@@ -114,6 +135,7 @@
     font-size: 2rem;
     font-weight: bold;
     transition: all 0.3s ease;
+
     &:hover {
       background-color: #dede32;
       color: #808000;

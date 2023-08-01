@@ -64,13 +64,13 @@ newPerson(2,3);
                 setTimeout(() => {
                     personDiv.classList.remove('leaving', 'first');
                     personDiv.style.display = 'none';
-                }, "1000");
-            }, "1000");
+                }, 1000);
+            }, 1000);
             setTimeout(() => {
                 newPerson(2,3);
                 personDiv.style.display = 'flex';
                 freeze = false;
-            }, "2300");
+            }, 2300);
         }
         if (personDiv.classList.contains('waiting-in-1')) {
             personInside = true;
@@ -79,7 +79,7 @@ newPerson(2,3);
                 personDiv.classList.remove('waiting-in-1');
                 personDiv.classList.add('in-elevator', 'first');
                 freeze = false;
-            }, "1000");
+            }, 1000);
         }
     }
     btnsElevatorFloor[1].onclick = () => {
@@ -110,13 +110,13 @@ newPerson(2,3);
                 setTimeout(() => {
                     personDiv.classList.remove('leaving', 'second');
                     personDiv.style.display = 'none';
-                }, "1000");
-            }, "1000");
+                }, 1000);
+            }, 1000);
             setTimeout(() => {
                 newPerson(1,3);
                 personDiv.style.display = 'flex';
                 freeze = false;
-            }, "2300");
+            }, 2300);
         }
         if (personDiv.classList.contains('waiting-in-2')) {
             personInside = true;
@@ -125,7 +125,7 @@ newPerson(2,3);
                 personDiv.classList.remove('waiting-in-2');
                 personDiv.classList.add('in-elevator', 'second');
                 freeze = false;
-            }, "1000");
+            }, 1000);
         }
     }
     btnsElevatorFloor[0].onclick = () => {
@@ -156,13 +156,13 @@ newPerson(2,3);
                 setTimeout(() => {
                     personDiv.classList.remove('leaving', 'third');
                     personDiv.style.display = 'none';
-                }, "1000");
-            }, "1000");
+                }, 1000);
+            }, 1000);
             setTimeout(() => {
                 newPerson(1,2);
                 personDiv.style.display = 'flex';
                 freeze = false;
-            }, "2300");
+            }, 2300);
         }
         if (personDiv.classList.contains('waiting-in-3')) {
             personInside = true;
@@ -171,7 +171,7 @@ newPerson(2,3);
                 personDiv.classList.remove('waiting-in-3');
                 personDiv.classList.add('in-elevator', 'third');
                 freeze = false;
-            }, "1000");
+            }, 1000);
         }
      }
 }
